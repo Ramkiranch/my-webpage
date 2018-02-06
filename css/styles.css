@@ -1,0 +1,275 @@
+/* Global Styles
+**************************/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.quote:before{
+	content: '\1F676';
+	font-size: 20px;
+	color: red;
+}
+
+.quote:after{
+	content: '\1F677';
+	font-size: 20px;
+	color: red;
+}
+
+nav {
+	text-align: center;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.btn{
+	text-decoration: none;
+	background: #EF233C;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+}
+
+.download{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+body{
+
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin:0;
+
+	
+}
+
+.content-wrap {
+	margin: 0 auto;
+	max-width: 950px;
+	padding: 60px 50px;
+	overflow: hidden;
+}
+
+/*.content-wrap img.articleImage {
+	display: block;
+	float: center;
+	
+}*/
+
+/*p, ul{
+	font-size: 15px;
+}*/
+
+
+
+.profile-img {
+	/*display: block;
+	margin: auto;*/
+	border-radius: 50%;
+
+
+}
+
+h1{
+
+	font-size: 35px;
+
+
+}
+
+.initial {
+
+	font-size: 20px;
+	text-align: left;
+	margin-top:0;
+
+}
+
+h2{
+	font-size: 25px;
+	text-align: center;
+	margin-top:0;
+}
+
+h1, h2{
+
+	/*font-family: 'Lobster', cursive;
+	font-family: 'El Messiri', sans-serif;
+	/*font-family: 'Dosis', sans-serif;*/
+	font-family: 'Cormorant SC', serif;
+}
+
+h3{
+	margin: 0;
+}
+
+a {
+	color: #EF233C;
+}
+
+a:hover {
+
+	text-decoration: none;
+}
+
+
+/* Header and Footer
+**************************/
+
+header {
+
+	background: #2B2D42;
+	color: #8D99AE;
+	padding-top: 20px;
+	position: relative;
+	
+}
+
+footer {
+
+	background: #2B2D42;
+	color: #8D99AE;
+	text-align: center;
+	
+
+}
+
+header h1, header h2 {
+
+	color: #EDF2F4;
+	
+	margin:0;
+
+
+}
+
+/* Work Experience, Projects
+**************************/
+
+.we, .pro {
+ 
+   background: #EDF2F4;
+}
+
+h3 ~ p{
+
+	margin: 0;
+}
+
+.pro2 {
+	margin-bottom: 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.job-description p:first-of-type{
+	margin-top: 0;
+}
+
+.job-description{
+	margin-bottom: 15px;
+}
+
+.image2 {
+	width: 80px;
+	height: 60px;
+}
+
+.image3 {
+	width: 150px;
+	height: 80px;
+}
+
+/* Education, skill set
+**************************/
+
+.edu {
+
+	
+	background: linear-gradient(rgba(141,153,174,0.8), rgba(141,153,174,0.5)),
+				url(../Images/Chicago.jpg) no-repeat fixed;
+	background-size: cover;
+
+}
+
+.edu2 {
+	text-align: center;
+}
+
+.ss {
+
+	/*background: #8D99AE;*/
+	background: linear-gradient(rgba(141,153,174,0.8), rgba(141,153,174,0.5)),
+				url(../Images/skills2.jpg) no-repeat fixed;
+	background-size: cover;
+
+}
+
+.ss2{
+	font-size: 17px;
+	/*color: #FFFFFF;*/
+}
+
+
+.contact-info a{
+	
+	padding: 20px;
+	display: inline-block;
+	font-size: 30px;
+}
+
+p + h3 {
+	margin-top: 30px;
+}
+
+/* Media Queries
+**********************/
+
+@media(min-width: 900px){
+
+	.col-narrow {
+	width: 30%;
+	float: left;
+	
+}
+
+.col-wide{
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	text-align: justify;
+}
+
+}
+
+@media(max-width: 899px){
+	header{
+		text-align: center;
+	}
+ 	
+ 	.profile-img{
+ 		width: 200px;
+ 	}
+
+}
+
+
